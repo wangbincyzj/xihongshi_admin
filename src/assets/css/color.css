@@ -1,0 +1,15 @@
+
+:root {
+    --text-color: #323233;
+    --border-color: #ebedf0;
+    --active-color: #f2f3f5;
+    --background-color: #f7f8fa;
+    --background-color-light: #fafafa;
+
+    --el-success:#67C23A;
+    --el-warning:#E6A23C;
+    --el-danger:#F56C6C;
+    --el-info: rgb(144, 147, 153);
+}
+
+

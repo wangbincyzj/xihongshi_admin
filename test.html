@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        123
+        <child :message.sync="message"></child>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data:{
+                message: "Hello World"
+            },
+            methods: {},
+            components:{
+                child:{
+                    template:`<button @click='$emit("update:message", "hehe")'>{{message}}</button>`,
+                    props:["message"]
+                }
+            }
+        })
+    </script>
+</body>
+</html>

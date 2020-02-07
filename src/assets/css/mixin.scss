@@ -1,0 +1,25 @@
+// 水平垂直居中
+@mixin all_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 水平垂直居中
+@mixin all_center_wh($width, $height){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: - 0.5 * $width;
+  margin-top: -0.5 * $height;
+}
+
+
+// 宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
